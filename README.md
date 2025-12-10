@@ -3,9 +3,9 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Badarous
+- PRÉNOM : Emma
+- GROUPE : A1
 - URL du site :
 - URL FIGMA :
 

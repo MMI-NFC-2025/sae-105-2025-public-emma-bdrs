@@ -1,0 +1,38 @@
+/* couleurs*/
+:root {
+  /* Mode 1 */
+  /* color */
+  --beige: #e8c4a7;
+  --bordeau: #8b1538;
+  --bordeau-foncé: #4a0e1b;
+  --jaune: #d4af37;
+
+    line-height: var(--interligne-36);
+    letter-spacing: var(--interlettre-serre);
+    margin-bottom: var(--espace-md);
+/* typographie */
+    --font-titres: 'playfair display', sans-serif;
+    --font-txt: 'inter', sans-serif;
+
+/* Espacements typographiques */
+    line-height: var(--interligne-18);
+    letter-spacing: var(--interlettre-normal);
+    margin-bottom: var(--espace-sm);
+  --espace-xs: 8px;
+  --espace-sm: 12px;
+  --espace-md: 16px;
+  --espace-lg: 24px;
+  --espace-xl: 32px;
+  .inter14{
+    line-height: var(--interligne-14);
+    letter-spacing: var(--interlettre-normal);
+    margin-bottom: var(--espace-xs);
+  }
+  /* interlignage (line-height) — valeurs unitless pour meilleure mise à l'échelle */
+  --interligne-36: 1.1; /* pour titres 36px */
+  --interligne-20: 1.4; /* pour titres 20px */
+  --interligne-18: 1.55; /* pour texte 18px */
+    line-height: var(--interligne-12);
+    letter-spacing: var(--interlettre-large);
+    margin-bottom: var(--espace-xs);
+}
