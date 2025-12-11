@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Festicloze — Accueil</title>
+        <title>Scènes — Festicloze</title>
         <link rel="stylesheet" href="src/css/vendors/style.css">
     </head>
     <body>
         <header class="site-header">
             <div class="header-inner">
-                <a href="/" class="logo-link">
+                <a href="index.html" class="logo-link">
                     <img src="assets/icons/logo.svg" alt="Festicloze" class="logo-img">
                     <span class="logo-text">Festicloze</span>
                 </a>
@@ -19,7 +19,7 @@
 
         <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
             <div class="menu-header">
-                <a href="/" class="menu-logo">
+                <a href="index.html" class="menu-logo">
                     <img src="assets/icons/logo.svg" alt="Festicloze" style="height:32px;width:auto;">
                     <span>Festicloze</span>
                 </a>
@@ -36,40 +36,44 @@
         </nav>
 
         <main>
-            <section class="hero">
-                <div class="hero-overlay">
-                    <h1 class="hero-title">Festicloze</h1>
-                    <p class="hero-sub"><span class="sub-top">La magie de Noël au cœur</span>
-                        <br>de la musique baroque</p>
-
-                    <div class="hero-meta">
-                        <span class="meta-date">20 - 23 Décembre 2025</span>
-                        <span class="meta-location">Montbéliard</span>
+            <section class="programme-hero">
+                <div class="programme-hero-bg"></div>
+            </section>
+            
+            <section class="scenes-section">
+                <h2 class="section-title">Lieux emblématiques</h2>
+                <div class="scenes-list">
+                    <div class="scene-card">
+                        <div class="scene-image">
+                            <img src="assets/img/eglise.avif" alt="Église Saint-Maimbœuf">
+                        </div>
+                        <div class="scene-info">
+                            <h3 class="scene-name">Église Saint-Maimbœuf</h3>
+                            <p class="scene-desc">Architecture gothique • Acoustique exceptionnelle</p>
+                        </div>
+                    </div>
+                    
+                    <div class="scene-card">
+                        <div class="scene-image">
+                            <img src="assets/img/chateau.avif" alt="Château des Ducs">
+                        </div>
+                        <div class="scene-info">
+                            <h3 class="scene-name">Château des Ducs</h3>
+                            <p class="scene-desc">Monument historique • Cadre majestueux</p>
+                        </div>
+                    </div>
+                    
+                    <div class="scene-card">
+                        <div class="scene-image">
+                            <img src="assets/img/temple.avif" alt="Temple Saint-Martin">
+                        </div>
+                        <div class="scene-info">
+                            <h3 class="scene-name">Temple Saint-Martin</h3>
+                            <p class="scene-desc">Orgue historique • Intimité baroque</p>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <section class="quick-stats">
-                <div class="stats-wrap">
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/musique.svg" alt="musique" class="stat-icon-inner"></div>
-                        <div class="stat-label">3 jours de concerts</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/artistes.svg" alt="artistes" class="stat-icon-inner"></div>
-                        <div class="stat-label">Plusieurs artistes</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/maps.svg" alt="lieux" class="stat-icon-inner"></div>
-                        <div class="stat-label">3 lieux</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta">
-                <button type="button" class="btn primary">Réserver mes places</button>
-            </section>
-
         </main>
 
         <footer class="site-footer">

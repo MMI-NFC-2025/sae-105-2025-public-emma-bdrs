@@ -1,4 +1,5 @@
 /* couleurs*/
+/* color */
 :root {
   /* Mode 1 */
   /* color */
@@ -6,10 +7,9 @@
   --bordeau: #8b1538;
   --bordeau-foncé: #4a0e1b;
   --jaune: #d4af37;
+  --jauneclair: #f5f5dc;
+  --noir: #1a1a1a;
 
-    line-height: var(--interligne-36);
-    letter-spacing: var(--interlettre-serre);
-    margin-bottom: var(--espace-md);
 /* typographie */
     --font-titres: 'playfair display', sans-serif;
     --font-txt: 'inter', sans-serif;

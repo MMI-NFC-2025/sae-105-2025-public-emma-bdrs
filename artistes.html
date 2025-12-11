@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Festicloze — Accueil</title>
+        <title>Artistes — Festicloze</title>
         <link rel="stylesheet" href="src/css/vendors/style.css">
     </head>
     <body>
         <header class="site-header">
             <div class="header-inner">
-                <a href="/" class="logo-link">
+                <a href="index.html" class="logo-link">
                     <img src="assets/icons/logo.svg" alt="Festicloze" class="logo-img">
                     <span class="logo-text">Festicloze</span>
                 </a>
@@ -19,7 +19,7 @@
 
         <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
             <div class="menu-header">
-                <a href="/" class="menu-logo">
+                <a href="index.html" class="menu-logo">
                     <img src="assets/icons/logo.svg" alt="Festicloze" style="height:32px;width:auto;">
                     <span>Festicloze</span>
                 </a>
@@ -36,40 +36,47 @@
         </nav>
 
         <main>
-            <section class="hero">
-                <div class="hero-overlay">
-                    <h1 class="hero-title">Festicloze</h1>
-                    <p class="hero-sub"><span class="sub-top">La magie de Noël au cœur</span>
-                        <br>de la musique baroque</p>
-
-                    <div class="hero-meta">
-                        <span class="meta-date">20 - 23 Décembre 2025</span>
-                        <span class="meta-location">Montbéliard</span>
+            <section class="programme-hero">
+                <div class="programme-hero-bg"></div>
+            </section>
+            
+            <section class="artistes-section">
+                <h2 class="section-title">Artistes</h2>
+                <div class="artistes-list">
+                    <div class="artiste-card">
+                        <div class="artiste-image">
+                            <img src="assets/img/ensemblebaroque.avif" alt="Ensemble Baroque de Paris">
+                        </div>
+                        <div class="artiste-info">
+                            <h3 class="artiste-name">Ensemble Baroque de Paris</h3>
+                            <p class="artiste-role">Direction musicale</p>
+                            <p class="artiste-dates">21 & 22 Décembre</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artiste-card">
+                        <div class="artiste-image">
+                            <img src="assets/img/soprano.avif" alt="Marie-Claire Dubois">
+                        </div>
+                        <div class="artiste-info">
+                            <h3 class="artiste-name">Marie-Claire Dubois</h3>
+                            <p class="artiste-role">Soprano</p>
+                            <p class="artiste-dates">20 & 23 Décembre</p>
+                        </div>
+                    </div>
+                    
+                    <div class="artiste-card">
+                        <div class="artiste-image">
+                            <img src="assets/img/violoniste.avif" alt="Antoine Lefèvre">
+                        </div>
+                        <div class="artiste-info">
+                            <h3 class="artiste-name">Antoine Lefèvre</h3>
+                            <p class="artiste-role">Violon baroque</p>
+                            <p class="artiste-dates">21 & 23 Décembre</p>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <section class="quick-stats">
-                <div class="stats-wrap">
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/musique.svg" alt="musique" class="stat-icon-inner"></div>
-                        <div class="stat-label">3 jours de concerts</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/artistes.svg" alt="artistes" class="stat-icon-inner"></div>
-                        <div class="stat-label">Plusieurs artistes</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-circle"><img src="assets/icons/maps.svg" alt="lieux" class="stat-icon-inner"></div>
-                        <div class="stat-label">3 lieux</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta">
-                <button type="button" class="btn primary">Réserver mes places</button>
-            </section>
-
         </main>
 
         <footer class="site-footer">
