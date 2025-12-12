@@ -6,8 +6,9 @@
 - NOM : Badarous
 - PRÉNOM : Emma
 - GROUPE : A1
-- URL du site : https://festicloze.badarous.fr/programmes
-- URL FIGMA : 
+- URL du site : https://festicloze.badarous.fr/
+- URL FIGMA : https://www.figma.com/design/YJCiItq4W3lwtkmhYqj6He/SAE-105?node-id=0-1&t=iWZNmKjBEsbUyCS7-1
+
 
 ## Sujet
 
