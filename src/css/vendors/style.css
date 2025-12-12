@@ -39,9 +39,31 @@ body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bor
 .stat-label{font-size:13px;margin-top:8px;text-align:center;min-height:36px;line-height:1.15}
 
 /* CTA */
-.cta{display:flex;justify-content:center;padding:48px 16px;background:#8b1538}
+.cta{display:flex;justify-content:center;padding:48px 16px 64px;background:#8b1538}
 .btn.primary{display:inline-block;background:var(--gold);color:#8b1538;padding:18px 28px;border-radius:12px;text-decoration:none;font-weight:700;width:86%;max-width:320px;text-align:center;border:none;cursor:pointer}
 .btn.primary:hover{opacity:0.9}
+
+/* Carousel */
+.carousel-section{padding:64px 16px 80px;background:var(--bordeaux)}
+.carousel-container{position:relative;width:100%;max-width:350px;margin:0 auto;overflow:hidden;border-radius:12px}
+.carousel-track{display:flex;transition:transform 0.3s ease}
+.carousel-slide{min-width:100%;aspect-ratio:16/10;border:none;padding:0;background:none;cursor:pointer}
+.carousel-image-placeholder{width:100%;height:100%;background:linear-gradient(135deg,rgba(212,175,55,0.2) 0%,rgba(139,21,56,0.3) 100%);display:flex;align-items:center;justify-content:center;color:var(--beige);font-size:14px}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:white;border:none;font-size:28px;padding:6px 10px;cursor:pointer;border-radius:4px;z-index:10}
+.carousel-prev{left:8px}
+.carousel-next{right:8px}
+.carousel-btn:hover{background:rgba(0,0,0,0.7)}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer;transition:background 0.3s}
+.dot.active{background:var(--gold)}
+
+/* Lightbox */
+.lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.active{display:flex}
+.lightbox-content{position:relative;max-width:90vw;max-height:90vh;width:100%}
+.lightbox-image-placeholder{width:100%;height:80vh;background:linear-gradient(135deg,rgba(212,175,55,0.2) 0%,rgba(139,21,56,0.3) 100%);display:flex;align-items:center;justify-content:center;color:var(--beige);font-size:18px;border-radius:8px}
+.lightbox-close{position:absolute;top:20px;right:20px;background:none;border:none;color:white;font-size:48px;cursor:pointer;width:48px;height:48px;display:flex;align-items:center;justify-content:center;line-height:1;z-index:1001}
+.lightbox-close:hover{color:var(--gold)}
 
 /* Footer */
 .site-footer{background:var(--bordeaux);padding:0;color:var(--beige);border-top:4px solid var(--gold);border-bottom:4px solid var(--gold)}
@@ -91,10 +113,12 @@ body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bor
 
 /* Artistes Page */
 .artistes-section{padding:32px 16px;background:var(--bordeaux)}
-.artistes-list{display:flex;flex-direction:column;gap:16px}
-.artiste-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
-.artiste-image{height:128px;overflow:hidden}
+.artistes-list{display:flex;flex-direction:column;gap:16px;max-width:450px;margin:0 auto}
+.artiste-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05);border:none;outline:none;width:100%;text-align:left;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;padding:0;display:block;text-decoration:none}
+.artiste-card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.1)}
+.artiste-image{height:140px;overflow:hidden}
 .artiste-image img{width:100%;height:100%;object-fit:cover}
+.artiste-marie-claire img{object-position:center 15%}
 .artiste-info{padding:16px}
 .artiste-name{font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:#8b1538;margin:0 0 8px}
 .artiste-role{font-family:'Inter',sans-serif;font-size:14px;color:#1a1a1a;margin:0 0 4px}
@@ -103,7 +127,8 @@ body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bor
 /* Scenes Page */
 .scenes-section{padding:32px 16px;background:var(--bordeaux)}
 .scenes-list{display:flex;flex-direction:column;gap:16px}
-.scene-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.scene-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05);border:none;outline:none;width:100%;text-align:left;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;padding:0;display:block;text-decoration:none}
+.scene-card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.1)}
 .scene-image{height:96px;overflow:hidden}
 .scene-image img{width:100%;height:100%;object-fit:cover}
 .scene-info{padding:12px}
@@ -114,10 +139,11 @@ body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bor
 .contact-section{padding:32px 16px;background:var(--bordeaux)}
 .contact-form{max-width:100%}
 .form-group{margin-bottom:20px}
-.form-group label{display:block;font-family:'Inter',sans-serif;font-size:14px;color:var(--beige);margin-bottom:8px}
-.form-group input,.form-group textarea{width:100%;padding:12px;border:1px solid rgba(245,245,220,0.3);border-radius:4px;background:rgba(0,0,0,0.1);color:var(--beige);font-family:'Inter',sans-serif;font-size:14px}
-.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(245,245,220,0.5)}
-.form-group textarea{resize:vertical;min-height:120px}
+.form-group label{display:block;font-family:'Playfair Display',serif;font-size:14px;color:var(--beige);margin-bottom:8px;font-weight:400}
+.form-group input,.form-group textarea{width:100%;padding:14px;border:2px solid rgba(245,245,220,0.6);border-radius:8px;background:transparent;color:var(--beige);font-family:'Inter',sans-serif;font-size:13px;box-sizing:border-box}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(245,245,220,0.4)}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:rgba(245,245,220,0.8)}
+.form-group textarea{resize:vertical;min-height:140px}
 
 /* Infos Pratiques Page */
 .infos-section{padding:32px 16px;background:var(--bordeaux)}
@@ -139,6 +165,49 @@ body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bor
 .page-content p{margin:0 0 16px}
 .page-content a{color:var(--gold);text-decoration:none}
 .page-content a:hover{text-decoration:underline}
+
+/* Template Artiste Page */
+.template-artiste-section{padding:32px 16px 48px;background:var(--bordeaux)}
+.template-artiste-content{max-width:450px;margin:0 auto}
+.template-artiste-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.template-artiste-image{height:260px;overflow:hidden}
+.template-artiste-image img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.template-artiste-bio{padding:24px 16px}
+.template-artiste-bio p{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:#8b1538;line-height:1.7;margin:0}
+
+/* Template Scene Page */
+.template-scene-section{padding:32px 16px 48px;background:var(--bordeaux)}
+.template-scene-content{max-width:450px;margin:0 auto}
+.template-scene-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05);border:1px solid #1a1a1a}
+.template-scene-image{position:relative;height:252px;overflow:hidden}
+.template-scene-image img{width:100%;height:220px;object-fit:cover;display:block}
+.template-scene-subtitle{padding:12px 28px 12px 12px;background:transparent}
+.template-scene-subtitle p{font-family:'Inter',sans-serif;font-size:12px;color:#1a1a1a;margin:0;line-height:1.3}
+.template-scene-description{padding:24px 16px}
+.template-scene-description p{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:#8b1538;line-height:1.7;margin:0}
+
+/* À propos Page */
+.apropos-section{padding:32px 16px;background:var(--bordeaux)}
+.apropos-title{font-family:'Playfair Display',serif;font-size:24px;color:var(--beige);text-align:center;margin:0 0 24px;font-weight:600}
+.apropos-content{max-width:450px;margin:0 auto}
+.apropos-content p{font-family:'Inter',sans-serif;font-size:14px;color:var(--beige);line-height:1.7;margin:0 0 24px}
+.apropos-subtitle{font-family:'Playfair Display',serif;font-size:18px;color:var(--beige);margin:32px 0 16px;font-weight:600}
+.apropos-values{list-style:none;padding:0;margin:0 0 24px}
+.apropos-values li{font-family:'Inter',sans-serif;font-size:14px;color:var(--beige);line-height:1.7;margin:0 0 12px}
+.apropos-values li strong{font-weight:600}
+
+/* Carousel */
+.carousel-container{position:relative;width:100%;max-width:500px;margin:0 auto;overflow:hidden;border-radius:12px}
+.carousel-track{display:flex;transition:transform 0.3s ease}
+.carousel-slide{min-width:100%;aspect-ratio:16/10}
+.carousel-image-placeholder{width:100%;height:100%;background:linear-gradient(135deg,rgba(212,175,55,0.2) 0%,rgba(139,21,56,0.3) 100%);display:flex;align-items:center;justify-content:center;color:var(--beige);font-size:14px}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:white;border:none;font-size:32px;padding:8px 12px;cursor:pointer;border-radius:4px;z-index:10}
+.carousel-prev{left:8px}
+.carousel-next{right:8px}
+.carousel-btn:hover{background:rgba(0,0,0,0.7)}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer;transition:background 0.3s}
+.dot.active{background:var(--gold)}
 
 /* Accessibility focus */
 a:focus{outline:2px solid var(--gold);outline-offset:2px}

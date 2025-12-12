@@ -70,6 +70,36 @@
                 <button type="button" class="btn primary">Réserver mes places</button>
             </section>
 
+            <section class="carousel-section">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <button class="carousel-slide" data-lightbox="0">
+                            <div class="carousel-image-placeholder"></div>
+                        </button>
+                        <button class="carousel-slide" data-lightbox="1">
+                            <div class="carousel-image-placeholder"></div>
+                        </button>
+                        <button class="carousel-slide" data-lightbox="2">
+                            <div class="carousel-image-placeholder"></div>
+                        </button>
+                    </div>
+                    <button class="carousel-btn carousel-prev" aria-label="Image précédente">‹</button>
+                    <button class="carousel-btn carousel-next" aria-label="Image suivante">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" aria-label="Fermer">×</button>
+                <div class="lightbox-content">
+                    <div class="lightbox-image-placeholder"></div>
+                </div>
+            </div>
+
         </main>
 
         <footer class="site-footer">
@@ -100,5 +130,6 @@
 
         <script src="src/js/script.js"></script>
         <script src="src/js/menu.js"></script>
+        <script src="src/js/carousel.js"></script>
     </body>
 </html>
