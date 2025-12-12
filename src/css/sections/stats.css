@@ -1,0 +1,7 @@
+/* Stats */
+.quick-stats{display:flex;justify-content:center;padding:32px 12px;position:relative;z-index:6}
+.stats-wrap{display:flex;gap:32px;align-items:center;width:100%;justify-content:center}
+.stat{display:flex;flex-direction:column;align-items:center;min-width:80px}
+.stat-circle{width:56px;height:56px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
+.stat-circle img{width:20px;height:20px}
+.stat-label{font-size:13px;margin-top:8px;text-align:center;min-height:36px;line-height:1.15}

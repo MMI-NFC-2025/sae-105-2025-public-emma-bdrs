@@ -1,0 +1,9 @@
+/* Content Pages */
+.content-page{padding:32px 16px;min-height:calc(100vh - 200px)}
+.content-page-inner{max-width:100%;text-align:center}
+.page-title{font-family:var(--font-titres);font-size:48px;margin:0 0 28px}
+.page-content{font-size:16px;line-height:1.6}
+.page-content h3{font-family:var(--font-titres);font-size:24px;margin:24px 0 12px}
+.page-content p{margin:0 0 16px}
+.page-content a{color:var(--gold);text-decoration:none}
+.page-content a:hover{text-decoration:underline}

@@ -1,0 +1,7 @@
+/* Error 404 */
+.error-section{min-height:calc(100vh - 200px);display:flex;align-items:center;justify-content:center;padding:48px 16px}
+.error-content{text-align:center;max-width:450px}
+.error-code{font-family:var(--font-titres);font-size:120px;color:var(--gold);margin:0 0 16px;line-height:1;font-weight:700}
+.error-title{font-family:var(--font-titres);font-size:32px;margin:0 0 16px;font-weight:600}
+.error-message{font-family:var(--font-txt);font-size:16px;line-height:1.6;margin:0 0 32px}
+.error-section .btn.primary{margin-top:8px}

@@ -1,0 +1,9 @@
+/* À propos */
+.apropos-section{padding:32px 16px}
+.apropos-title{font-family:var(--font-titres);font-size:24px;text-align:center;margin:0 0 24px;font-weight:600}
+.apropos-content{max-width:450px;margin:0 auto}
+.apropos-content p{font-family:var(--font-txt);font-size:14px;line-height:1.7;margin:0 0 24px}
+.apropos-subtitle{font-family:var(--font-titres);font-size:18px;margin:32px 0 16px;font-weight:600}
+.apropos-values{list-style:none;padding:0;margin:0 0 24px}
+.apropos-values li{font-family:var(--font-txt);font-size:14px;line-height:1.7;margin:0 0 12px}
+.apropos-values li strong{font-weight:600}

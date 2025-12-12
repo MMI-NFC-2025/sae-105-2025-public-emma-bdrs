@@ -1,0 +1,12 @@
+/* Artistes */
+.artistes-section{padding:32px 16px}
+.artistes-list{display:flex;flex-direction:column;gap:16px;max-width:450px;margin:0 auto}
+.artiste-card{background:var(--beige);border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05);border:0;outline:0;width:100%;text-align:left;cursor:pointer;transition:transform .2s,box-shadow .2s;padding:0;display:block;text-decoration:none}
+.artiste-card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,.1)}
+.artiste-image{height:140px;overflow:hidden}
+.artiste-image img{width:100%;height:100%;object-fit:cover}
+.artiste-marie-claire img{object-position:center 15%}
+.artiste-info{padding:16px}
+.artiste-name{font-family:var(--font-txt);font-size:16px;font-weight:600;color:var(--bordeaux-light);margin:0 0 8px}
+.artiste-role{font-family:var(--font-txt);font-size:14px;color:var(--noir);margin:0 0 4px}
+.artiste-dates{font-family:var(--font-txt);font-size:12px;color:var(--noir);margin:0}

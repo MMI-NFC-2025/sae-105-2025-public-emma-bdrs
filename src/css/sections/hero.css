@@ -1,0 +1,10 @@
+/* Hero */
+.hero{min-height:90vh;background:url('/assets/img/fond.avif') center 35%/cover;position:relative;display:flex;align-items:center;justify-content:center}
+.hero-overlay{position:relative;z-index:2;padding:18px 16px;text-align:center;max-width:86%}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(74,14,27,.22),rgba(74,14,27,.72))}
+.hero-title{font-family:var(--font-titres);font-size:64px;color:inherit;margin:0 0 28px;line-height:1;letter-spacing:.4px;text-shadow:0 1px 0 rgba(0,0,0,.12)}
+.hero-sub{font-size:16px;margin:0 0 32px;line-height:1.75}
+.sub-top{display:inline-block}
+.hero-meta{display:inline-block;background:rgba(255,255,255,.18);padding:24px 48px;border-radius:14px;font-size:16px;margin-top:0}
+.meta-date{display:block;font-weight:600}
+.meta-location{display:block;margin-top:6px;opacity:.95}

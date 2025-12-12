@@ -1,0 +1,10 @@
+/* Infos Pratiques */
+.infos-section{padding:32px 16px}
+.infos-list{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+.info-card{background:var(--beige);padding:20px 16px;border-radius:12px}
+.info-title{font-family:var(--font-txt);font-size:16px;font-weight:700;color:var(--bordeaux);margin:0 0 8px}
+.info-text{font-family:var(--font-txt);font-size:14px;color:var(--bordeaux);margin:0}
+.partenaires-section{padding:32px 16px 48px;background:var(--bordeaux-light)}
+.partenaires-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.partenaire-item{background:#2a0a14;padding:20px 12px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:72px;text-align:center}
+.partenaire-item span{font-family:Inter,sans-serif;font-size:13px;color:var(--beige);line-height:1.3}

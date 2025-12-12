@@ -1,0 +1,15 @@
+/* Programme */
+.programme-hero{height:120px;position:relative;background:url('/assets/img/fond.avif') center top/cover}
+.programme-hero-bg{position:absolute;inset:0;background:rgba(139,21,56,.62)}
+.programme-section{padding:32px 16px}
+.section-title{font-family:var(--font-titres);font-size:24px;text-align:center;margin:0 0 24px}
+.programme-list{display:flex;flex-direction:column;gap:16px}
+.programme-card{background:var(--beige);border:1px solid rgba(212,175,55,.3);border-radius:8px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.programme-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.programme-date{font-family:Inter,sans-serif;font-size:16px;font-weight:600;color:#8b0000;margin:0}
+.programme-badge{display:inline-block;padding:4px 8px;border-radius:4px;font-size:12px;color:#8b0000}
+.badge-ouverture{background:rgba(212,175,55,.2)}
+.badge-baroque{background:rgba(220,20,60,.2)}
+.badge-famille{background:rgba(212,175,55,.2)}
+.programme-title{font-family:var(--font-txt);font-size:14px;color:var(--bordeaux);margin:0 0 4px}
+.programme-info{font-family:var(--font-txt);font-size:12px;color:var(--bordeaux);margin:0}

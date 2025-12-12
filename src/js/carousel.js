@@ -45,10 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lightbox functionality
     const lightbox = document.getElementById('lightbox');
     const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const carouselImages = ['carousel1.avif', 'carousel2.avif', 'carousel3.avif'];
     
-    slides.forEach((slide) => {
+    slides.forEach((slide, index) => {
         slide.addEventListener('click', () => {
-            if (lightbox) {
+            if (lightbox && lightboxImage) {
+                lightboxImage.src = `assets/img/${carouselImages[index]}`;
+                lightboxImage.alt = `Carousel ${index + 1}`;
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }

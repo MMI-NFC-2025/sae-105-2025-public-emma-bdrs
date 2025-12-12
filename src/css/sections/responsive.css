@@ -1,0 +1,5 @@
+/* Responsive */
+@media(min-width:768px){
+  .hero-title{font-size:84px}
+  .hero{min-height:70vh}
+}
